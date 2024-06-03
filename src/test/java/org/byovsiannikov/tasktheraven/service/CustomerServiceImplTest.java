@@ -2,7 +2,6 @@ package org.byovsiannikov.tasktheraven.service;
 
 import jakarta.persistence.EntityExistsException;
 import jakarta.persistence.EntityNotFoundException;
-import jakarta.validation.Validator;
 import org.byovsiannikov.tasktheraven.converter.CustomerConverter;
 import org.byovsiannikov.tasktheraven.dto.Customer;
 import org.byovsiannikov.tasktheraven.entity.CustomerEntity;
@@ -30,9 +29,6 @@ class CustomerServiceImplTest {
 
     @Mock
     private CustomerConverter customerConverter;
-
-    @Mock
-    private Validator validator;
 
     @InjectMocks
     private CustomerServiceImpl customerService;
