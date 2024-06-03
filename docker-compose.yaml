@@ -4,9 +4,9 @@ services:
     image: postgres
     restart: always
     ports:
-      - 5455:5432 # Map host port 5455 to container port 5432
+      - 5455:5432
     environment:
-      POSTGRES_USER: postgres # Correct environment variable name
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
       POSTGRES_DB: raven
     volumes:
