@@ -41,7 +41,6 @@ public class CustomerServiceImpl implements CustomerService {
     public List<Customer> readAllCustomers () {
         List<CustomerEntity> customerEntityList = repository.findAllByIsActiveTrue();
         log.info("Customers {} successfully retrieved", customerEntityList.size());
-
         return customerConverter.toDto(customerEntityList);
     }
 
